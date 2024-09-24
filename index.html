@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Donation Platform</title>
+
     <!-- Tailwind CSS CDN -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -20,7 +21,6 @@
             font-family: "Lexend", sans-serif;
         }
 
-        /* Glass effect for the navbar */
         .glass {
             background: rgba(249, 247, 243, 0.5);
             backdrop-filter: blur(10px);
@@ -28,7 +28,6 @@
 
         .tab {
             transition: background-color 0.3s ease, color 0.3s ease;
-            /* Smooth transition for background and text color */
         }
     </style>
 </head>
@@ -166,18 +165,17 @@
 
     <!-- Modal for invalid donation -->
     <input type="checkbox" id="invalid-modal" class="modal-toggle" />
-    <div class="modal">
-        <div class="modal-box">
-            <h3 class="font-bold text-lg text-red-500">Invalid Donation!</h3>
-            <p class="py-4">Please enter a valid amount to donate.</p>
+    <div class="modal text-center">
+        <div class="modal-box  flex flex-col justify-center items-center">
+            <h3 class="font-bold text-3xl text-red-500">Invalid Donation!</h3>
+            <p class="py-4 text-lg font-semibold">Please enter a valid amount to donate.</p>
             <div class="modal-action">
-                <label for="invalid-modal" class="btn">Close</label>
+                <label for="invalid-modal" class="btn">Close!</label>
             </div>
         </div>
     </div>
 
-    <!-- Link to external JavaScript file -->
-    <script src="index.js"></script>
+    <script src="./index.js"></script>
 </body>
 
 </html>

@@ -12,21 +12,23 @@
 
 <body>
 
-   <!-- Navbar -->
-   <nav class="fixed top-0 left-0 right-0 z-50 glass p-4">
-    <div class="container mx-auto flex justify-between items-center">
-        <button>
-            <a href="./index.html" class="btn btn-primary ml-4">Home</a>
-        </button>
-        <div class="flex items-center justify-center gap-4">
-            <img src="./assets/logo.png" alt="Logo" class="max-w-full h-auto">
-            <h1 class="text-xl font-bold">Donation Platform</h1>
+    <!-- Navbar -->
+    <nav class="fixed top-0 left-0 right-0 z-50 glass p-4">
+        <div class="container mx-auto flex justify-between items-center max-w-9xl max-w-7xl 2xl:max-w-screen-2xl">
+            <button>
+                <a href="./index.html" class="btn bg-[#B4F461] px-8 py-3 font-semibold text-xl">Home</a>
+            </button>
+            <div class="flex items-center justify-center gap-4">
+                <img src="./assets/logo.png" alt="Logo" class="max-w-full h-auto">
+                <h1 class="text-xl font-bold hidden md:flex">Donation Platform</h1>
+            </div>
+            <div>
+                <span class="text-lg font-semibold flex items-center gap-2">
+                    <img src="./assets/coin.png" alt="coin">
+                    <span id="wallet-amount">250000</span> BDT</span>
+            </div>
         </div>
-        <div>
-            <span class="text-lg font-semibold">Wallet: <span id="wallet-amount">250000</span> BDT</span>
-        </div>
-    </div>
-</nav>
+    </nav>
 
     <!-- Blog Section -->
     <div class="container mx-auto my-6">
