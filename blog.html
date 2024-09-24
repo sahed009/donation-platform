@@ -5,18 +5,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Page</title>
-    <!-- Tailwind CSS and DaisyUI CDN -->
-    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@2.51.5/dist/full.css" rel="stylesheet">
+
+
+    <!-- Tailwind CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap" rel="stylesheet">
+
+
+    <style>
+        .lexend {
+            font-family: "Lexend", sans-serif;
+        }
+
+        .glass {
+            background: rgba(249, 247, 243, 0.5);
+            backdrop-filter: blur(10px);
+        }
+
+        .tab {
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+    </style>
 </head>
 
-<body>
+<body class=" max-w-7xl mx-auto">
 
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass p-4">
-        <div class="container mx-auto flex justify-between items-center max-w-9xl max-w-7xl 2xl:max-w-screen-2xl">
+        <div class="container mx-auto flex justify-between items-center">
             <button>
-                <a href="./index.html" class="btn bg-[#B4F461] px-8 py-3 font-semibold text-xl">Home</a>
+                <a href="./index.html" class=" bg-[#B4F461] px-8 py-3 font-bold text-xl rounded-md">Home</a>
             </button>
             <div class="flex items-center justify-center gap-4">
                 <img src="./assets/logo.png" alt="Logo" class="max-w-full h-auto">
@@ -31,7 +54,7 @@
     </nav>
 
     <!-- Blog Section -->
-    <div class="container mx-auto my-6">
+    <div class="container mx-auto my-6 mt-[10%]">
         <h2 class="text-2xl font-bold mb-4">Recent Blogs</h2>
 
         <!-- Blog Posts using DaisyUI card component -->
