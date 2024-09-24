@@ -63,7 +63,8 @@
     <!-- Donation Section -->
     <div id="donation-section" class="container mx-auto grid grid-cols-1">
         <!-- Noakhali Donation Card -->
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-0 max-w-6xl mx-auto bg-white border-[1px] rounded-lg p-4 mt-[45%] md:mt-[13%]">
+        <div
+            class="grid grid-cols-1 md:grid-cols-2 gap-0 max-w-6xl mx-auto bg-white border-[1px] rounded-lg p-4 mt-[50%] md:mt-[13%]">
             <div>
                 <figure>
                     <img src="./assets/noakhali.png" alt="Noakhali" class=" w-full h-auto rounded-lg">
@@ -145,7 +146,7 @@
 
 
     <!-- History Section -->
-    <div id="history-section" class="container max-w-6xl mx-auto mt-[10%] hidden bg-[#F9F7F3]">
+    <div id="history-section" class="container max-w-6xl mx-auto mt-[40%] md:mt-[10%] hidden bg-[#F9F7F3]">
         <ul id="donation-history" class="pl-6 list-none p-10 flex flex-col justify-start gap-2 bg-white"></ul>
     </div>
 
@@ -167,6 +168,7 @@
     <input type="checkbox" id="invalid-modal" class="modal-toggle" />
     <div class="modal text-center">
         <div class="modal-box  flex flex-col justify-center items-center">
+            <div class="w-1/3 p-4 mb-8 "><img src="./assets/error.png" alt="Error" class="max-w-full h-auto"></div>
             <h3 class="font-bold text-3xl text-red-500">Invalid Donation!</h3>
             <p class="py-4 text-lg font-semibold">Please enter a valid amount to donate.</p>
             <div class="modal-action">

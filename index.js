@@ -52,7 +52,7 @@ function updateHistory() {
     li.classList.add("p-4");
     li.innerHTML = `
             <div class="border-[1px] rounded-md mb-8 p-8">
-                <strong>${entry.amount} Taka is donated for ${entry.disaster} at ${entry.location}, Bangladesh</strong>
+                <strong>${entry.amount} Taka is donated for ${entry.disaster} at ${entry.location}, Bangladesh.</strong>
                 <br>
                 <span class="text-sm text-gray-500">Date: ${entry.time}</span>
             </div>
