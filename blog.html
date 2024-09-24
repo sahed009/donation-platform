@@ -33,7 +33,7 @@
     </style>
 </head>
 
-<body class=" max-w-7xl mx-auto">
+<body class="max-w-7xl mx-auto">
 
     <!-- Navbar -->
     <nav class="fixed top-0 left-0 right-0 z-50 glass p-4">
@@ -54,36 +54,54 @@
     </nav>
 
     <!-- Blog Section -->
-    <div class="container mx-auto my-6 mt-[10%]">
-        <h2 class="text-2xl font-bold mb-4">Recent Blogs</h2>
-
-        <!-- Blog Posts using DaisyUI card component -->
-        <div class="space-y-4">
-            <!-- Blog Card 1 -->
-            <div class="card shadow-lg bg-white">
-                <div class="card-body">
-                    <h2 class="card-title">Impact of Donations in Noakhali</h2>
-                    <p>Contributions helped countless families affected by the floods...</p>
-                    <a href="#" class="text-primary">Read More</a>
-                </div>
+    <div class="container px-4 mx-auto my-6 mt-[50%] md:mt-[10%]">
+        <div class="flex gap-2 mb-8">
+            <h2 class="text-2xl font-bold mb-4">Important FAQ</h2>
+            <div class="w-[40px] ">
+                <img src="./assets/question.gif" alt="question gif" class="max-w-full h-auto" />
             </div>
+        </div>
 
-            <!-- Blog Card 2 -->
-            <div class="card shadow-lg bg-white">
-                <div class="card-body">
-                    <h2 class="card-title">Relief Efforts in Feni</h2>
-                    <p>The relief efforts in Feni supported many victims with immediate aid...</p>
-                    <a href="#" class="text-primary">Read More</a>
-                </div>
+        <div class="collapse collapse-arrow bg-base-200 my-4">
+            <input type="radio" name="my-accordion-2" checked="checked" />
+            <div class="collapse-title text-xl font-medium">what is the Document Object Model (DOM) ?</div>
+            <div class="collapse-content">
+                <p>The Document Object Model (DOM) is a programming interface that represents the structure of a web
+                    page as a tree of objects, allowing scripts to interact with and update its content, structure, and
+                    style.</p>
             </div>
+        </div>
 
-            <!-- Blog Card 3 -->
-            <div class="card shadow-lg bg-white">
-                <div class="card-body">
-                    <h2 class="card-title">Aid for Injured in the Quota Movement</h2>
-                    <p>Recent contributions helped victims recover and receive proper care...</p>
-                    <a href="#" class="text-primary">Read More</a>
-                </div>
+
+        <div class="collapse collapse-arrow bg-base-200 my-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+            <div class="collapse-content">
+                <p>You can select an element using `document.getElementById('id')`, `document.querySelector('.class')`,
+                    or `document.querySelectorAll('selector')`.</p>
+            </div>
+        </div>
+
+
+        <div class="collapse collapse-arrow bg-base-200 my-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">What is event delegation in the context of the Dom, and why
+                is it useful?</div>
+            <div class="collapse-content">
+                <p>Event delegation is a technique where a single event listener is added to a parent element to handle
+                    events for multiple child elements. It's useful for better performance and handling dynamically
+                    added elements.</p>
+            </div>
+        </div>
+
+
+        <div class="collapse collapse-arrow bg-base-200 my-4">
+            <input type="radio" name="my-accordion-2" />
+            <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and style
+                using the DOM?</div>
+            <div class="collapse-content">
+                <p>You can manipulate an element's attributes using `setAttribute()` and its style using the `style`
+                    property, e.g., `element.setAttribute('id', 'newId')` or `element.style.color = 'red'`.</p>
             </div>
         </div>
     </div>
